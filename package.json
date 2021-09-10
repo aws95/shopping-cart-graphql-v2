@@ -1,0 +1,42 @@
+{
+  "name": "shopping-cart-graphql-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./src/server.js",
+    "start": "node ./src/server.js",
+    "build": "babel src -d dist --copy-files"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dataloader": "^2.0.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "graphql": "^15.5.3",
+    "module-alias": "^2.2.2",
+    "mongoose": "^6.0.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "nodemon": "^2.0.12"
+  },
+  "_moduleAliases": {
+    "@root": ".",
+    "@typeDefs": "./src/schemas/typeDefs/index.js",
+    "@schemas": "./src/schemas/index.js"
+  }
+}
